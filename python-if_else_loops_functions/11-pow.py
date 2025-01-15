@@ -4,6 +4,4 @@ def pow(a, b):
         return abs(a * b)
     elif a < 0 or b < 0:
         return -(a * b)
-
-
     return a * b
