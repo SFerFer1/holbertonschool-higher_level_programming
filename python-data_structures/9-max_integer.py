@@ -7,5 +7,4 @@ def max_integer(my_list=[]):
     for num in my_list:
         if num > find:
             find = num
-    print("Max: {}".format(find))
     return find
