@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
             letraM += i
     
     for n in roman_string:
-        resta += Valores[i]
+        resta += Valores[n]
         if n == letraM:
             break
     
