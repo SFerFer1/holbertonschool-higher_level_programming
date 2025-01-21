@@ -6,6 +6,9 @@ def roman_to_int(roman_string):
     resta = 0
     suma = 0
     total = 0
+    if len(roman_string) == 1:
+        return Valores[roman_string[0]]
+
 
     for i in roman_string:
         if Valores[i] > mayor:
