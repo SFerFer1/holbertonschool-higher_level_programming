@@ -2,7 +2,7 @@
 def update_dictionary(a_dictionary, key, value):
     n = 0
     for i in a_dictionary:
-      if a_dictionary[i].keys() == key:
+      if i.keys() == key:
             a_dictionary[i] = value
             n += 1
     if n  != 0:
