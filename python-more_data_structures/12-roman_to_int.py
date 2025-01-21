@@ -33,7 +33,7 @@ def roman_to_int(roman_string):
         if t == letraM:
             break
 
-    if Valores[letraM] == 5:
+    if Valores[letraM] == 5 or  Valores[letraM]:
         print(Valores[letraM])
         print(suma)
         print(resta)
