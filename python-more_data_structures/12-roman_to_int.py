@@ -27,13 +27,13 @@ def roman_to_int(roman_string):
         resta += Valores[roman_string[n]]
         
         
-    if letraM == "" or  mayor == 0:
-        for t in range((len(roman_string)-1), -1, -1):
+    
+        for t in reversed(roman_string):
             if t == letraM:
                 break
             suma += Valores[roman_string[t]]
 
-    print(Valores[letraM])
+   
     total = ((Valores[letraM] - resta) + suma)
    
     return total
