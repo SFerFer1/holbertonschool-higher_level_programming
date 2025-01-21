@@ -14,10 +14,12 @@ def roman_to_int(roman_string):
             mayor = Valores[i]
             letraM = ""
             letraM += i
-    if letraM == "" or  mayor == 0:
-        for j in roman_string:
-            total += Valores[j]
-        return total
+            
+    if all(c == roman_string[0] for c in roman_string):
+        if letraM == "" or  mayor == 0:
+            for j in roman_string:
+                total += Valores[j]
+            return total
 
 
 
