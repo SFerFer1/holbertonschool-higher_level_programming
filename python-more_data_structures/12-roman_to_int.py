@@ -33,9 +33,7 @@ def roman_to_int(roman_string):
                 break
             suma += Valores[roman_string[t]]
 
-    print(Valores[letraM])
-    print(resta)
-    print(suma)
+    
     total = ((Valores[letraM] - resta) + suma)
    
     return total
