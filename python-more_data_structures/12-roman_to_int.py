@@ -27,11 +27,11 @@ def roman_to_int(roman_string):
         resta += Valores[roman_string[n]]
         
         
-
-    for t in range((len(roman_string)-1), -1, -1):
-        if t == letraM:
-            break
-        suma += Valores[roman_string[t]]
+    if letraM == "" or  mayor == 0:
+        for t in range((len(roman_string)-1), -1, -1):
+            if t == letraM:
+                break
+            suma += Valores[roman_string[t]]
 
     print(Valores[letraM])
     print(resta)
