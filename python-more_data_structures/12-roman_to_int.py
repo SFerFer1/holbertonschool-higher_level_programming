@@ -22,16 +22,16 @@ def roman_to_int(roman_string):
         return total
 
     for n in roman_string:
-        resta += Valores[n]
         if n == letraM:
             break
+        resta += Valores[n]
         
         
 
     for t in range(len(roman_string) - 1, -1, -1):
+        suma += Valores[roman_string[t]]
         if t == letraM:
             break
-        suma += Valores[roman_string[t]]
 
     if Valores[letraM] == 5:
         print(Valores[letraM])
