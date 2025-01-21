@@ -34,5 +34,5 @@ def roman_to_int(roman_string):
         suma += Valores[roman_string[t]]
         
 
-    total = ((Valores[letraM] - resta) + suma)
+    total = (Valores[letraM] (suma - resta))
     return total
