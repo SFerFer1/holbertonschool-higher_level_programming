@@ -28,10 +28,10 @@ def roman_to_int(roman_string):
         
         
     
-        for t in reversed(roman_string):
-            if t == letraM:
-                break
-            suma += Valores[t]
+    for t in reversed(roman_string):
+        if t == letraM:
+             break
+        suma += Valores[t]
 
    
     total = ((Valores[letraM] - resta) + suma)
