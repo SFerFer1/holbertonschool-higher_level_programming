@@ -24,14 +24,14 @@ def roman_to_int(roman_string):
     for n in roman_string:
         if n == letraM:
             break
-        resta += Valores[roman_string[n]]
+        resta += Valores[n]
         
         
     
         for t in reversed(roman_string):
             if t == letraM:
                 break
-            suma += Valores[roman_string[t]]
+            suma += Valores[t]
 
    
     total = ((Valores[letraM] - resta) + suma)
