@@ -13,7 +13,7 @@ def roman_to_int(roman_string):
         if Valores[i] > mayor:
             mayor = Valores[i]
             letraM = ""
-            letraM += i
+            letraM = i
 
     
     if letraM == "" or  mayor == 0:
@@ -21,17 +21,18 @@ def roman_to_int(roman_string):
             total += Valores[j]
         return total
 
-
-
     for n in roman_string:
         resta += Valores[n]
         if n == letraM:
             break
-    
+        
+        
+
     for t in range(len(roman_string) - 1, -1, -1):
         if t == letraM:
             break
         suma += Valores[roman_string[t]]
+
     if Valores[letraM] == 5:
         print(Valores[letraM])
         print(suma)
