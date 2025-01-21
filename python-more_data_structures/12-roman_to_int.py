@@ -16,7 +16,7 @@ def roman_to_int(roman_string):
             letraM = i
 
     
-    if letraM == "" or  mayor == 0:
+    if all(char == roman_string[0] for char in roman_string):
         for j in roman_string:
             total += Valores[j]
         return total
