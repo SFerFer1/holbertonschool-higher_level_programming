@@ -2,9 +2,10 @@
 def roman_to_int(roman_string):
     total = 0
     for i in range(len(0, roman_string)):
-        if i == "I":
+        if i == 'I':
             total +=1
-        elif i == "V":
+        elif i == 'V':
             total += 5
-                
+        else:
+            return 0       
     return total        
