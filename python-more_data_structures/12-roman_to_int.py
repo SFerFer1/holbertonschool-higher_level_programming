@@ -32,10 +32,10 @@ def roman_to_int(roman_string):
         if t == letraM:
             break
         suma += Valores[roman_string[t]]
-        
-    print(Valores[letraM])
-    print(suma)
-    print(resta)
+    if Valores[letraM] == 5:
+        print(Valores[letraM])
+        print(suma)
+        print(resta)
     total = (Valores[letraM] + (suma - resta))
    
     return total
