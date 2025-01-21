@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
-    if a_dictionary is None:
-        a_dictionary[key] = value
+    n = 0
     for i in a_dictionary:
         if i == key:
             a_dictionary[i] = value
