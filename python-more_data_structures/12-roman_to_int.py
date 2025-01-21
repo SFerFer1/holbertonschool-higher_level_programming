@@ -29,9 +29,9 @@ def roman_to_int(roman_string):
         
 
     for t in range((len(roman_string)-1), -1, -1):
-        suma += Valores[roman_string[t]]
         if t == letraM:
             break
+        suma += Valores[roman_string[t]]
 
   
     total = ((Valores[letraM] - resta) + suma)
