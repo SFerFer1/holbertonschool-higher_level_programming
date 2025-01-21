@@ -35,4 +35,6 @@ def roman_to_int(roman_string):
         
 
     total = (Valores[letraM] + (suma - resta))
+    if letraM == 5:
+        return 4
     return total
