@@ -18,8 +18,8 @@ def roman_to_int(roman_string):
         if n == letraM:
             break
     
-    while t  > 0:
-        suma += Valores[roman_string[t]]
+    while t in roman_string  > 0:
+        suma += Valores[t]
         if n == letraM:
             break
         t = t - 1
