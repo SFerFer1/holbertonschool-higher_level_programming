@@ -7,29 +7,20 @@ This module contains a function to add two integers.
 
 def add_integer(a, b=98):
 """
-    Adds two integers and returns the result.
 
-    Arguments:
-    a -- first integer (must be an integer)
-    b -- second integer (must be an integer, default is 98)
+def add_integer(a, b=98):
+"""
+it adds two numbers
+>>> def add_integer(2, 3):
+5
+>>> add_integer(2)
+100
+>>> def add_integer("", 3):
+a must be an integer
+>>> def add_integer(2, ""):
+b must be an integer
 
-    Returns:
-    The sum of the two integers.
-
-    Examples:
-    >>> add_integer(2, 3)
-    5
-    >>> add_integer(2)
-    100
-    >>> add_integer("2", 3)
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-    >>> add_integer(2, "3")
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
-    """
+"""
 if not isinstance(a, int):
     raise TypeError("a must be an integer")
 if not isinstance(b, int):
