@@ -32,10 +32,11 @@ def roman_to_int(roman_string):
     reverseDist = len(roman_string) -dist -1
     cont = 0
     for t in reversed(roman_string):
-        cont += 1
-        if cont > reverseDist:
+        
+        if cont >= reverseDist:
              break
         suma += Valores[t]
+        cont += 1
         
 
 
