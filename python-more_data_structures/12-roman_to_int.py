@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    Valores = {'I': 1, 'V': 5,'X': 10,'L': 50,'L': 100 }
+    Valores = {'I': 1, 'V': 5,'X': 10,'L': 50,'C': 100 }
     mayor = 0
     letraM = ""
     resta = 0
