@@ -6,6 +6,7 @@ def roman_to_int(roman_string):
     resta = 0
     suma = 0
     total = 0
+    dist = 0
     
 
 
@@ -25,13 +26,16 @@ def roman_to_int(roman_string):
         if n == letraM:
             break
         resta += Valores[n]
+        dist += 1
         
-        
-    
+    reverseDist = len(roman_string) -1 -dist   
+    cont = 0
     for t in reversed(roman_string):
-        if t == letraM:
+        cont+=1
+        if cont < reverseDist:
              break
         suma += Valores[t]
+
 
    
     total = ((Valores[letraM] - resta) + suma)
