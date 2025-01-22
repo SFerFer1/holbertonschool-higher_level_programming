@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-Help on built-in module atexit:
-
-atexit - allow programmer to define multiple exit functions
-to be executed upon normal program termination.
-Two public functions, register and unregister, are defined.
 
 """
 Module: 0-add_integer
