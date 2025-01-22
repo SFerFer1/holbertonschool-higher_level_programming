@@ -1,6 +1,7 @@
 #0-add_integer.py
-
-def add_integer(a, b=98):
+Module: 0-add_integer
+This module contains a function to add two integers.
+def add_integer(a, b=98):it adds two numbers
 """
 >>> def add_integer("", 3):
 a must be an integer
