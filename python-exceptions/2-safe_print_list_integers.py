@@ -7,7 +7,6 @@ def safe_print_list_integers(my_list=[], x=0):
             cont += 1
         except (TypeError, ValueError, IndexError) as e:
             print("Traceback (most recent call last):")
-            print(f"  File \"<stdin>\", line {i+1}, in safe_print_list_integers")
             print(f"{e.__class__.__name__}: {str(e)}")
             continue
     print()
