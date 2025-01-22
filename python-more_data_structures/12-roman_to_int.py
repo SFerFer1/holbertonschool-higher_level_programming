@@ -36,10 +36,10 @@ def roman_to_int(roman_string):
         if cont > reverseDist:
              break
         suma += Valores[t]
-        cont += 1
+        
 
 
-    return reverseDist
+    
     total = (Valores[letraM] + suma) - resta
    
     return total
