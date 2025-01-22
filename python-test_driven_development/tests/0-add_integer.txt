@@ -1,4 +1,11 @@
->>> 0-add_integer = _import_('0-add_integer').0-add_integer
+#!/usr/bin/python3
+
+===========================
+How to Use 0-add_integer.py
+===========================
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
 
 """
 Module: 0-add_integer
