@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+>>> 0-add_integer = _import_('0-add_integer').0-add_integer
 
 """
 Module: 0-add_integer
