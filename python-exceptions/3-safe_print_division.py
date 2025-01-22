@@ -4,7 +4,6 @@ def safe_print_division(a, b):
         total = a/b
         return total
     except:
-        print("{} / {} = None".format(a, b))
         total = None
         return None
     finally:
