@@ -6,8 +6,9 @@ def safe_print_list_integers(my_list=[], x=0):
             print("{:d}".format(my_list[i]), end ="")
             cont += 1
         except (TypeError, ValueError, IndexError) as e:
-            print("Traceback (most recent call last):")
-            print(f"{e.__class__.__name__}: {str(e)}")
+            
             continue
     print()
+    print("Traceback (most recent call last):")
+    print(f"{e.__class__.__name__}: {str(e)}")
     return cont
