@@ -23,10 +23,11 @@ def roman_to_int(roman_string):
         return total
 
     for n in roman_string:
+        dist += 1
         if n == letraM:
             break
         resta += Valores[n]
-        dist += 1
+        
         
     reverseDist = len(roman_string) -dist -1
     cont = 0
