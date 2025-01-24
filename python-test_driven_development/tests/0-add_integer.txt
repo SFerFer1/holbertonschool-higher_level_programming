@@ -31,8 +31,8 @@
 	...
 	OverflowError: cannot convert float infinity to integer
 
-	>>> add_integer(float('nan'), 3)
+	>>> add_integer(float('nan'), 2)
 	Traceback (most recent call last):
 	...
-	ValueError: could not convert string to float: 'NaN'
-	
+	ValueError: cannot convert float NaN to integer
+
