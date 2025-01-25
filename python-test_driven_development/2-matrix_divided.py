@@ -1,36 +1,35 @@
 #!/usr/bin/python3
-"""Módulo para dividir todos los elementos de una matriz
+"""Module to divide all elements of a matrix
 """
 
-def dividir_matriz(matriz, divisor):
-    """Divide todos los elementos de una matriz por el divisor.
+def matrix_divided(matrix, div):
+    """Divide all elements of a matrix by div.
 
-    Argumenys:
-        matriz (lista de listas de enteros/decimales): La matriz que se va a dividir.
-        divisor (entero/decimal): El número con el que se divide.
+    Args:
+        matrix (list of lists of int/float): The matrix to be divided.
+        div (int/float): The divisor.
 
-    Return:
-        lista de listas de decimales: Un.
+    Returns:
+        list of lists of float: A new matrix with all elements divided by div and rounded to 2 decimal places.
 
-    Excepciones:
-        TypeError: Si la matriz no es una lista de listas de enteros/decimales.
-        TypeError: Si las filas de la matriz no tienen el mismo tamaño.
-        TypeError: Si el divisor no es un número.
-        ZeroDivisionError: Si el divisor es cero.
+    Raises:
+        TypeError: If matrix is not a matrix of integers/floats.
+        TypeError: If rows of the matrix are not all the same size.
+        TypeError: If div is not a number.
+        ZeroDivisionError: If div is zero
     """
-    if not isinstance(matriz, list) or not all(isinstance(fila, list) for fila in matriz):
-        raise TypeError("la matriz debe ser una lista de listas de enteros/decimales")
-
-    if not all(isinstance(elem, (int, float)) for fila in matriz for elem in fila):
-        raise TypeError("la matriz debe ser una lista de listas de enteros/decimales")
-
-    largo_fila = len(matriz[0])
-    if not all(len(fila) == largo_fila for fila in matriz):
-        raise TypeError("todas las filas de la matriz deben tener el mismo tamaño")
-
-    if not isinstance(divisor, (int, float)):
-        raise TypeError("el divisor debe ser un número")
-    if divisor == 0:
-        raise ZeroDivisionError("división por cero")
-
-    return [[round(elem / divisor, 2) for elem in fila] for fila in matriz]
+    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not all(isinstance(elem, (int, float)) for row in matrix for elem in row):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    
+    row_length = len(matrix[0])
+    if not all(len(row) == row_length for row in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
+    
+    if not isinstance(div, (int, float)):
+        raise TypeError("div must be a number")
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    
+    return [[round(elem / div, 2) for elem in row] for row in matrix]
