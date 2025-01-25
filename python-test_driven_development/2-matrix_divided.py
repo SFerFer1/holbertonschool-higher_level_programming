@@ -23,14 +23,14 @@ def dividir_matriz(matriz, divisor):
 
     if not all(isinstance(elem, (int, float)) for fila in matriz for elem in fila):
         raise TypeError("la matriz debe ser una lista de listas de enteros/decimales")
-    
+
     largo_fila = len(matriz[0])
     if not all(len(fila) == largo_fila for fila in matriz):
         raise TypeError("todas las filas de la matriz deben tener el mismo tamaño")
-    
+
     if not isinstance(divisor, (int, float)):
         raise TypeError("el divisor debe ser un número")
     if divisor == 0:
         raise ZeroDivisionError("división por cero")
-    
-    return [[round(elem / divisor, 2) for elem in fila] for fila in matriz]
+
+    return [[round(elem / divisor, 2i) for elem in fila] for fila in matriz]
