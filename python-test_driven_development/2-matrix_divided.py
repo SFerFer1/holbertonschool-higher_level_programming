@@ -33,4 +33,4 @@ def dividir_matriz(matriz, divisor):
     if divisor == 0:
         raise ZeroDivisionError("división por cero")
 
-    return [[round(elem / divisor, 2i) for elem in fila] for fila in matriz]
+    return [[round(elem / divisor, 2) for elem in fila] for fila in matriz]
