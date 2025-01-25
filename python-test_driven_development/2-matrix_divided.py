@@ -3,6 +3,7 @@
 """
 
 def matrix_divided(matrix, div):
+
     """Divide all elements of a matrix by div.
 
     Args:
@@ -10,8 +11,7 @@ def matrix_divided(matrix, div):
         div (int/float): The divisor.
 
     Returns:
-        list of lists of float: A new matrix with all elements divided by div and rounded to 2 decimal places.
-
+        list of lists of float: A new matrix.
     Raises:
         TypeError: If matrix is not a matrix of integers/floats.
         TypeError: If rows of the matrix are not all the same size.
@@ -27,8 +27,6 @@ def matrix_divided(matrix, div):
             row in matrix for elem in row):
         raise TypeError("matrix must be a matrix (list "
                         "of lists) of integers/floats")
-
-
     row_length = len(matrix[0])
     if not all(len(row) == row_length for row in matrix):
         raise TypeError("Each row of the matrix must have the same size")
