@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module to divide all elements of a matrix
 """
-
 def matrix_divided(matrix, div):
 
 
@@ -19,11 +18,13 @@ def matrix_divided(matrix, div):
         TypeError: If div is not a number.
         ZeroDivisionError: If div is zero
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or \
+   not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list "
                         "of lists) of integers/floats")
 
-    if not all(isinstance(elem, (int, float)) for row in matrix for elem in row):
+    if not all(isinstance(elem, (int, float)) for
+            row in matrix for elem in row):
         raise TypeError("matrix must be a matrix (list "
                         "of lists) of integers/floats")
     row_length = len(matrix[0])
