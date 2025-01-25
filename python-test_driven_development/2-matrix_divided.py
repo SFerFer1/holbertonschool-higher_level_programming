@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Module to divide all elements of a matrix
 """
-def matrix_divided(matrix, div):  
+
+
+def matrix_divided(matrix, div):
     """Divide all elements of a matrix by div.
     Args:
         matrix (list of lists of int/float): The matrix to be divided.
