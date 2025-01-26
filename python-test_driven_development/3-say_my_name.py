@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+
 def say_my_name(first_name, last_name=""):
-    """Prints a statement introducing the user by their first and last name.
+    """
+    Prints a statement introducing the user by their first and last name.
 
     Args:
         first_name (str): The user's first name.
