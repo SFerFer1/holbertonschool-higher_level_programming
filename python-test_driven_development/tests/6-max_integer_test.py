@@ -17,7 +17,7 @@ class TestMaxInteger(unittest.TestCase):
     
     def test_max_integer_negative(self):
         """Test with a list containing negative integers."""
-        self.assertEqual(max_integer([-10, -2, -3, -4]), -10)
+        self.assertEqual(max_integer([-10, -2, -3, -4]), -2)
     
     def test_max_integer_single_element(self):
         """Test with a list containing a single integer."""
