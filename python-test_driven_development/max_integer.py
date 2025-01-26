@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""place hold
+"""Unittest for max_integer([..])
 """
+
 
 def max_integer(lst=[]):
     """return max
