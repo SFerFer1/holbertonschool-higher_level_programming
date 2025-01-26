@@ -6,8 +6,6 @@ def max_integer(lst=[]):
     """return max
         If the list is empty, the function returns None
     """
-    if not all(isinstance(i, int) for i in lst):
-        raise TypeError("The list must only contain integers.")
     
     if len(lst) == 0:
         return None
