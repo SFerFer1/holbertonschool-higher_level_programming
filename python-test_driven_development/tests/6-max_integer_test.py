@@ -9,7 +9,7 @@ class TestMaxInteger(unittest.TestCase):
     
     def test_max_integer(self):
         """Test with a list of integers."""
-        self.assertEqual(max_integer([1, 2, 3, 6]), 6)
+        self.assertEqual(max_integer([6, 9, 23, 47]), 47)
 
     def test_max_at_the_end(self):
         """Test max at the end."""
