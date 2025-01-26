@@ -4,24 +4,24 @@
 Traceback (most recent call last):
 TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
->>> say_my_name("A", "B", "C")
+>>> say_my_name("H", "S", "C")
 Traceback (most recent call last):
 TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
->>> say_my_name(42)
+>>> say_my_name(28)
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name(42, "Hamilton")
+>>> say_my_name(42, "BoB")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Alex", 42)
+>>> say_my_name("Jose", 42)
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name("Alex", "Hamilton")
-My name is Alex Hamilton
+>>> say_my_name("Leto", "Tor")
+My name is Leto Tor
 
->>> say_my_name("Alex")
+>>> say_my_name("Leto")
 My name is Alex
