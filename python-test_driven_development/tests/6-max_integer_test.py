@@ -37,13 +37,16 @@ class TestMaxInteger(unittest.TestCase):
             max_integer([2, 'c', 4])
 
     def test_max_integer_at_the_end(self):
-    self.assertEqual(max_integer([1, 3, 5, 2, 7]), 7)
+        """Test with max end."""
+        self.assertEqual(max_integer([1, 3, 5, 2, 7]), 7)
 
-    def test_max_integer_at_the_end(self):
-    self.assertEqual(max_integer([8, 3, 5, 2, 1]), 8)
+    def test_max_integer_at_the_beginning(self):
+        """Test with a list beginning ."""
+        self.assertEqual(max_integer([8, 3, 5, 2, 1]), 8)
 
-    def test_max_integer_at_the_end(self):
-    self.assertEqual(max_integer([8, 3, 9, 2, 1]), 9)
+    def test_max_integer_at_the_middle(self):
+        """Test with a list middle ."""
+        self.assertEqual(max_integer([8, 3, 9, 2, 1]), 9)
 
 if __name__ == "__main__":
     unittest.main()
