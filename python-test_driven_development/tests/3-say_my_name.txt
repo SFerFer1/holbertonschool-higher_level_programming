@@ -24,4 +24,4 @@ TypeError: last_name must be a string
 My name is Leto Tor
 
 >>> say_my_name("Leto")
-My name is Alex
+My name is Leto
