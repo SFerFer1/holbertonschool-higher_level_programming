@@ -33,7 +33,7 @@ def print_square(size):
     if size == 4:
         for index in range(size):
             print("#" * size)
-    else:    
+    else: 
         for index in range(size):
             print("x" * size)
 
