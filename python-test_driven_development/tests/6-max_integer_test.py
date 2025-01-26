@@ -10,11 +10,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_integer(self):
         """Test with a list of integers."""
         self.assertEqual(max_integer([1, 2, 3, 6]), 6)
-    
-    def test_max_integer_unsorted(self):
-        """Test with an unsorted list of integers."""
-        self.assertEqual(max_integer([1, 3, 4, 2]), 4)
-    
+
+    def test_max_at_the_end(self):
+        """Test max at the end."""
+        self.assertEqual(max_integer([1, 3, 5, 2, 7]), 7)
+
     def test_max_integer_negative(self):
         """Test with a list containing negative integers."""
         self.assertEqual(max_integer([-10, -2, -3, -4]), -2)
