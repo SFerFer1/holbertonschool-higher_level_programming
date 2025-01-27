@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
+
 class Square:
     """
     clase Square represante a square.
@@ -33,6 +33,6 @@ class Square:
         Calcualte the area.
 
         Returns:
-        the area of the square
+            the area of the square
         """
         return self.__size ** 2
