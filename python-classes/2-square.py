@@ -28,12 +28,12 @@ class Square:
     def __init__(self, _Square__size = 0):
         """
         Constructor of class Square.
-        
+
         set Square instances
 
         Parameters:
            _Square__size  (int or float): The size of one side of the square.
-        
+
         Raise:
             TypeError: when size is no an integer
             ValueError: when size is negative 
