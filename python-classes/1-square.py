@@ -20,7 +20,7 @@ class Square:
     """
 
 
-    def __init__(self, size):
+    def __init__(self, _Square__size ):
         """
         Constructor of class Square.
         
@@ -29,4 +29,4 @@ class Square:
         Parameters:
             size (int or float): The size of one side of the square.
         """
-        self._size = size
+        self._Square__size = _Square__size
