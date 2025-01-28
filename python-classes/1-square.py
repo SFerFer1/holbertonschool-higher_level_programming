@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+"""
+This module defines a class named Square.
+
+This class have a size that is the length of the square.
+
+Usage:
+    You can create instances of Square.
+"""
+
+
 class Square:
     """
     clase Square represante a square.
@@ -8,6 +18,8 @@ class Square:
     Methods:
         __init__(size): Constructor that initializes the size of the square.
     """
+
+
     def __init__(self, size):
         """
         Constructor of class Square.
