@@ -45,7 +45,7 @@ class Rectangle:
     def height(self):
         """Retrieve the heigth of the rectangle."""
         return self._Rectangle__height
-    
+
     @width.setter
     def width(self, value):
         """Set the width of the square with validation."""
