@@ -6,6 +6,7 @@ Usage:
     You can create instances of Rectangle.
 """
 
+
 class Rectangle:
     """
     A class representing a rectangle.
