@@ -11,6 +11,6 @@ Usage:
 
 class Square:
     """
-    class Square represante a rectangle.
+    A class that represents a square, a special type of rectangle where all sides are equal.
     """
-    pass
+    pass 
