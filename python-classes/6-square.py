@@ -49,9 +49,6 @@ class Square:
             self._Square__size = size
 
 
-        if position[0] > 0 and position[1] > 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
             self.position = position
 
 
