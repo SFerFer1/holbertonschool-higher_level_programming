@@ -79,5 +79,6 @@ class Rectangle:
             for b in range(self._Rectangle__height):
                 for n in range(self._Rectangle__width):
                     string += "#"
-                string += " "
+                string += "\n"
+            string[:-1]
         return string
