@@ -5,8 +5,10 @@ This module defines a class named Square.
 For now only do that.
 
 Usage:
-    You can create instances of the Square class and extend its functionality as needed.
+    You can create instances of Square.
 """
+
+
 class Square:
     """
     class Square represante a square.
