@@ -1,4 +1,21 @@
 #!/usr/bin/python3
+"""
+This module defines a class named Square.
+
+This class have a size that is the length of the square.
+
+Attributes:
+    _Square__size (int or float): The size of one side of the square
+
+Methods:
+    __init__(self, _Square__size):
+        Initializes the square with a given size.
+
+Usage:
+    You can create instances of Square.
+"""
+
+
 class Square:
     """
     clase Square represante a square.
@@ -7,22 +24,28 @@ class Square:
 
     Methods:
         __init__(size): Constructor that initializes the size of the square.
+        def area(self): calculate the area of the square.
+        def size(self): retrive the size of the square.
+        
     """
-    def __init__(self, size):
+    def __init__(self, _Square__size=0):
         """
-            Constructor of class Square.
-    
-            Parameters:
-                size (int or float): The size of one side of the square.
-            Raise:
-                TypeError: when size is no an integer
-                ValueError: when size is negative 
+        Constructor of class Square.
+
+        set Square instances
+
+        Parameters:
+           _Square__size  (int or float): The size of one side of the square.
+
+        Raise:
+            TypeError: when size is no an integer
+            ValueError: when size is negative
         """
-        if not isinstance(size, int):
+        if not isinstance(_Square__size, int):
             raise TypeError("size must be an integer")
-        if size < 0:
+        if _Square__size < 0:
             raise ValueError("size must be >= 0")
-        self._size = size
+        self._Square__size = _Square__size
 
     def area(self):
         """
@@ -31,7 +54,7 @@ class Square:
         Returns:
             the area of the square
         """
-        return self._size ** 2
+        return self.__size ** 2
 
     @property
     def size(self):
