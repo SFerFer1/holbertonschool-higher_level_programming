@@ -4,6 +4,13 @@ This module defines a class named Square.
 
 This class have a size that is the length of the square.
 
+Attributes:
+    _Square__size (int or float): The size of one side of the square
+
+Methods:
+    __init__(self, _Square__size):
+        Initializes the square with a given size.
+
 Usage:
     You can create instances of Square.
 """
