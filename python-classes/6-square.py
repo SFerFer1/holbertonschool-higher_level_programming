@@ -49,7 +49,7 @@ class Square:
             self._Square__size = size
 
      
-            self.position = position
+            self._Square__position = position
 
 
 
@@ -69,7 +69,7 @@ class Square:
     
     @property
     def position(self):
-        return self.position
+        return self._Square__position
     
     @size.setter
     def size(self, value):
@@ -87,7 +87,7 @@ class Square:
         elif value[0] > 0 and value[1] > 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.position = value
+            self._Square__position = value
 
     def my_print(self):
         size = self._Square__size
