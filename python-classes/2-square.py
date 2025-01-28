@@ -25,7 +25,7 @@ class Square:
     Methods:
         __init__(size): Constructor that initializes the size of the square.
     """
-    def __init__(self, _Square__size = 0):
+    def __init__(self, _Square__size=0):
         """
         Constructor of class Square.
 
@@ -36,7 +36,7 @@ class Square:
 
         Raise:
             TypeError: when size is no an integer
-            ValueError: when size is negative 
+            ValueError: when size is negative
         """
         if not isinstance(_Square__size, int):
             raise TypeError("size must be an integer")
