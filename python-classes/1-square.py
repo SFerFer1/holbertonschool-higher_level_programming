@@ -18,12 +18,10 @@ class Square:
     Methods:
         __init__(size): Constructor that initializes the size of the square.
     """
-
-
-    def __init__(self, _Square__size ):
+def __init__(self, _Square__size):
         """
         Constructor of class Square.
-        
+
         set Square instances
 
         Parameters:
