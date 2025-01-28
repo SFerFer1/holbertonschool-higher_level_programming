@@ -46,7 +46,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._Square__size = size
+            self.size = size
 
         if not isinstance(position[0], int) and isinstance(position[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
