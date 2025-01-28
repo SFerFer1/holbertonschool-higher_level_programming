@@ -78,4 +78,4 @@ class Square:
             for b in range(size):
                 for n in range(size):
                     print("#", end="")
-                print("\n")
+                print()
