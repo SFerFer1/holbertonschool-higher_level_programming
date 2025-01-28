@@ -26,7 +26,7 @@ class Square:
         __init__(size): Constructor that initializes the size of the square.
         def area(self): calculate the area of the square.
         def size(self): retrive the size of the square.
-        
+
     """
     def __init__(self, _Square__size=0):
         """
@@ -60,7 +60,7 @@ class Square:
     def size(self):
         """Retrieve the size of the square."""
         return self._Square__size
-    
+
     @size.setter
     def size(self, value):
         """Set the size of the square with validation."""
@@ -69,4 +69,3 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self._Square__size = value
-
