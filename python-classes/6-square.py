@@ -49,7 +49,6 @@ class Square:
             self._Square__size = size
 
 
-            self.position = position
 
 
 
