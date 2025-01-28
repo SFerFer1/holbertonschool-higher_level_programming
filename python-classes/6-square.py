@@ -87,14 +87,6 @@ class Square:
         else:
             self.position = value
 
-
-
-
-
-
-
-        self.position = value
-
     def my_print(self):
         size = self.size
         if size == 0:
