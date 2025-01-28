@@ -2,15 +2,12 @@
 """
 This module defines a class named Rectangle.
 
-For now only do that.
-
 Usage:
-    You can create instances of rectangle.
+    You can create instances of Rectangle.
 """
 
-
-class Square:
+class Rectangle:
     """
-    A class that represents a rectangle.
+    A class representing a rectangle.
     """
-    pass 
+    pass
