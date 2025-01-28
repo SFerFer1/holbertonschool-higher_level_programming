@@ -80,5 +80,5 @@ class Rectangle:
                 for n in range(self._Rectangle__width):
                     string += "#"
                 string += "\n"
-            string[:-1]
+            string = string[:-1]
         return string
