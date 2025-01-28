@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+"""
+This module defines a class named Square.
+
+This class have a size that is the length of the square.
+
+Usage:
+    You can create instances of Square.
+"""
+
+
 class Square:
     """
     clase Square represante a square.
