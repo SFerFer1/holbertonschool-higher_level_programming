@@ -8,7 +8,21 @@ class Square:
     Methods:
         __init__(size): Constructor that initializes the size of the square.
     """
+    def __init__(self, size):
+        """
+            Constructor of class Square.
     
+            Parameters:
+                size (int or float): The size of one side of the square.
+            Raise:
+                TypeError: when size is no an integer
+                ValueError: when size is negative 
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self._size = size
 
     def area(self):
         """
