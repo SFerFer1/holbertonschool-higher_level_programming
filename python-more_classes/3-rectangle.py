@@ -72,11 +72,11 @@ class Rectangle:
         return (self._Rectangle__height + self._Rectangle__width) * 2
 
     def __str__(self):
-    
+        string = ""
         if self._Rectangle__height == 0 or self._Rectangle__width:
             print()
         else:
             for b in range(self._Rectangle__height):
                 for n in range(self._Rectangle__width):
-                    print("#", end="")
-                print()
+                    string += "#"
+                string += "\n"
