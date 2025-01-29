@@ -38,9 +38,9 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         self._Rectangle__height = height
-
-        Rectangle.number_of_instances += 1
         self.printsymbol = "#"
+        Rectangle.number_of_instances += 1
+        
 
     @property
     def width(self):
