@@ -40,6 +40,7 @@ class Rectangle:
         self._Rectangle__height = height
 
         Rectangle.number_of_instances += 1
+        self.print_symbol = "#"
 
     @property
     def width(self):
@@ -76,7 +77,6 @@ class Rectangle:
             return 0
         return (self._Rectangle__height + self._Rectangle__width) * 2
 
-    print_symbol = "#"
     
     def __str__(self):
         string = ""
