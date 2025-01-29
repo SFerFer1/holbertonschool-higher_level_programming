@@ -48,8 +48,8 @@ class Square:
         else:
             self._Square_position = position
             self._Square_size = size
-        print(self._Square_position)    
-
+        
+    
     def area(self):
         """
         Calcualte the area.
@@ -59,10 +59,10 @@ class Square:
         """
         return self._Square_size ** 2
 
-
     @property
     def position(self):
-        return self._Square_position 
+        """Retrieve the size of the square."""
+        return self._Square_position
 
     @property
     def size(self):
