@@ -55,7 +55,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 integers")
         if position[0] < 0 or position[1] < 0:
             raise ValueError("position must have non-negative values")
-        self.Square_position = position
+        self._Square_position = position
         
     
     def area(self):
@@ -70,7 +70,7 @@ class Square:
     @property
     def position(self):
         """Retrieve the size of the square."""
-        return self.Square_position
+        return self._Square_position
 
     @property
     def size(self):
@@ -95,7 +95,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 integers")
         if value[0] < 0 or value[1] < 0:
             raise ValueError("position must have non-negative values")
-        self.Square_position = value
+        self._Square_position = value
 
     def my_print(self):
         size = self._Square_size
