@@ -91,10 +91,10 @@ class Square:
         else:
             for b in range(size):
                 for x in range(self.position):
-                    print(" ", end="")
+                    print()
                 for n in range(size):
                     for y in range(self.position):
-                        print(" ", end="")
+                        print()
                     print("#", end="")
                 print()
                 
