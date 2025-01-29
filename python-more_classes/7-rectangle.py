@@ -12,7 +12,7 @@ class Rectangle:
     A class representing a rectangle.
     """
     number_of_instances = 0
-
+    print_symbol = "#"
     def __init__(self, width=0, height=0):
         """
         Constructor of class Square.
@@ -27,7 +27,7 @@ class Rectangle:
             ValueError: when size is negative
         """
         
-        self.print_symbol = "#"
+        
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
