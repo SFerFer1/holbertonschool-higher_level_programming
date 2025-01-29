@@ -48,7 +48,7 @@ class Square:
         else:
             self._Square__size = size
 
-            self._Square__position = position
+            self._Square_position = position
             
 
 
@@ -65,7 +65,7 @@ class Square:
 
     @property
     def position(self):
-        return self._Square__position
+        return self._Square_position
 
     @property
     def size(self):
@@ -74,7 +74,7 @@ class Square:
     
     @property
     def position(self):
-        return self._Square__position
+        return self._Square_position
     
     @size.setter
     def size(self, value):
