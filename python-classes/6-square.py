@@ -77,9 +77,9 @@ class Square:
     def position(self, value):
         """Sets the position of the square with validation."""
         if not isinstance(value, tuple) or len(value) != 2:
-            raise TypeError("position must be a tuple of 2 integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         if not all(isinstance(i, int) for i in value):
-            raise TypeError("position must be a tuple of 2 integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise ValueError("position must have non-negative values")
         print("value", value)
