@@ -90,29 +90,9 @@ class Square:
             print()
         else:
             for b in range(size):
-                for i in range(self.self.position[0]):
+                for x in range(self.position[0]):
                     print()
                 for n in range(size):
-                    for i in range(self.self.position[1]):
-                        print()
                     print("#", end="")
                 print()
 
-1, 1
-# \n
-# _###
-# _###
-# _###
-1,0
-# _###
-# _###
-# _###
-0, 1
-# \n
-# ###
-# ###
-# ###
-0, 0
-# ###
-# ###
-# ###
