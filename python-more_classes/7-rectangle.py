@@ -27,6 +27,7 @@ class Rectangle:
             ValueError: when size is negative
         """
         
+        self.printsymbol = "#"
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
@@ -38,7 +39,7 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         self._Rectangle__height = height
-        self.printsymbol = "#"
+        
         Rectangle.number_of_instances += 1
         
 
