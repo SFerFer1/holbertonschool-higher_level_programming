@@ -47,7 +47,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self._Square_size = size
-            position * 2
+            position + 2
             self._Square_position = position
             
 
