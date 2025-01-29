@@ -48,7 +48,7 @@ class Square:
         else:
             self._Square_position = (1, 1)
             self._Square_size = size
-            
+        print(self._Square_position)    
 
     def area(self):
         """
