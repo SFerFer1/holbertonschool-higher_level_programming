@@ -84,8 +84,6 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self._Square_position = value
 
-
-
     def my_print(self):
         size = self._Square_size
         if size == 0:
