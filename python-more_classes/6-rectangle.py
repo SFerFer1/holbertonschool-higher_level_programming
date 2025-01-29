@@ -12,6 +12,7 @@ class Rectangle:
     A class representing a rectangle.
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         Constructor of class Square.
@@ -95,5 +96,3 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
-
