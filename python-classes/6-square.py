@@ -44,9 +44,9 @@ class Square:
         self.size = size
         if (not isinstance(position, tuple) or len(position) != 2 or
             not all(isinstance(i, int) and i >= 0 for i in position)):
-                excepcion = TypeError
+                
                 mensaje = "position must be a tuple of 2 positive integers"
-                raise excepcion(mensaje)
+                raise TypeError(mensaje)
 
         self._Square_position = position
         
