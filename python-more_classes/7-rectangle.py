@@ -86,6 +86,8 @@ class Rectangle:
         else:
             for b in range(self._Rectangle__height):
                 for n in range(self._Rectangle__width):
+                    if not isinstance(self.print_symbol, str):
+                        self.print_symbol = str(self.print_symbol)
                     string += self.print_symbol
                 string += "\n"
             string = string[:-1]
