@@ -42,7 +42,7 @@ class Square:
             ValueError: when size is negative
         """
         self.size = size
-        self.position = position
+        self._Square_position = position
         
     
     def area(self):
