@@ -48,7 +48,7 @@ class Square:
         else:
             self._Square_position = (1, 1)
             self._Square_size = size
-            self._Square_position = position
+            
 
     def area(self):
         """
