@@ -41,21 +41,8 @@ class Square:
             TypeError: when size is no an integer
             ValueError: when size is negative
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-
-            self._Square_size = size
-
-        if not isinstance(position, tuple) or len(position) != 2:
-            raise TypeError("position must be a tuple of 2 integers")
-        if not all(isinstance(i, int) for i in position):
-            raise TypeError("position must be a tuple of 2 integers")
-        if position[0] < 0 or position[1] < 0:
-            raise ValueError("position must have non-negative values")
-        self._Square_position = position
+        self.size = size
+        self.position = position
         
     
     def area(self):
@@ -103,6 +90,29 @@ class Square:
             print()
         else:
             for b in range(size):
+                for i in range(self.self.position[0]):
+                    print()
                 for n in range(size):
+                    for i in range(self.self.position[1]):
+                        print()
                     print("#", end="")
                 print()
+
+1, 1
+# \n
+# _###
+# _###
+# _###
+1,0
+# _###
+# _###
+# _###
+0, 1
+# \n
+# ###
+# ###
+# ###
+0, 0
+# ###
+# ###
+# ###
