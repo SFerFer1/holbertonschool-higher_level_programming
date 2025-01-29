@@ -73,7 +73,7 @@ class Square:
             raise ValueError("size must be >= 0")
         self._Square_size = value
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """Sets the position of the square with validation."""
         if not isinstance(value, tuple) or len(value) != 2:
@@ -82,6 +82,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 integers")
         if value[0] < 0 or value[1] < 0:
             raise ValueError("position must have non-negative values")
+        print("value", value)
         self._Square_position = value
 
     def my_print(self):
@@ -89,12 +90,10 @@ class Square:
         if size == 0:
             print()
         else:
-            for b in range(size):
-                for x in range(self.position):
-                    print()
-                for n in range(size):
-                    for y in range(self.position):
-                        print()
-                    print("#", end="")
+            for y in range(self.position[1]):
                 print()
+            for n in range(size):
+                for x in range(self.position[0]):
+                    print(" ", end="")
+                print("#" * self.size)
                 
