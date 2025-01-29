@@ -71,11 +71,7 @@ class Square:
     def size(self):
         """Retrieve the size of the square."""
         return self._Square_size
-    
-    @property
-    def position(self):
-        return self._Square_position
-    
+ 
     @size.setter
     def size(self, value):
         """Set the size of the square with validation."""
@@ -87,12 +83,14 @@ class Square:
 
     @size.setter
     def position(self, value):
-        if not isinstance(value[0], int) and isinstance(value[1], int):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif value[0] > 0 and value[1] > 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self._Square_position = value
+        """Sets the position of the square with validation."""
+        if not isinstance(value, tuple) or len(value) != 2:
+            raise TypeError("position must be a tuple of 2 integers")
+        if not all(isinstance(i, int) for i in value):
+            raise TypeError("position must be a tuple of 2 integers")
+        if value[0] < 0 or value[1] < 0:
+            raise ValueError("position must have non-negative values")
+        self._Square_position = value
 
     def my_print(self):
         size = self._Square_size
