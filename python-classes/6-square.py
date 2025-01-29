@@ -46,7 +46,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._Square__size = size
+            self._Square_size = size
 
             self._Square_position = position
             
@@ -60,7 +60,7 @@ class Square:
         Returns:
             the area of the square
         """
-        return self._Square__size ** 2
+        return self._Square_size ** 2
 
 
     @property
@@ -70,7 +70,7 @@ class Square:
     @property
     def size(self):
         """Retrieve the size of the square."""
-        return self._Square__size
+        return self._Square_size
     
     @property
     def position(self):
@@ -83,7 +83,7 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        self._Square__size = value
+        self._Square_size = value
 
     @size.setter
     def position(self, value):
@@ -95,7 +95,7 @@ class Square:
             self._Square_position = value
 
     def my_print(self):
-        size = self._Square__size
+        size = self._Square_size
         if size == 0:
             print()
         else:
