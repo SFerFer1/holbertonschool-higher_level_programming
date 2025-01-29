@@ -27,7 +27,7 @@ class Rectangle:
             ValueError: when size is negative
         """
         
-        self.printsymbol = "#"
+        self.print_symbol = "#"
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
