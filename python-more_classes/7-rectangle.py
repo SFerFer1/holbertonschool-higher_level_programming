@@ -12,8 +12,7 @@ class Rectangle:
     A class representing a rectangle.
     """
     number_of_instances = 0
-    print_symbol = "#"
-    
+
     def __init__(self, width=0, height=0):
         """
         Constructor of class Square.
@@ -41,7 +40,7 @@ class Rectangle:
         self._Rectangle__height = height
 
         Rectangle.number_of_instances += 1
-    
+        self.printsymbol = "#"
 
     @property
     def width(self):
@@ -86,7 +85,7 @@ class Rectangle:
         else:
             for b in range(self._Rectangle__height):
                 for n in range(self._Rectangle__width):
-                    string += Rectangle.print_symbol
+                    string += self.print_symbol
                 string += "\n"
             string = string[:-1]
         return string
