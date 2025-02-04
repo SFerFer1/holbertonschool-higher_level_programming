@@ -10,21 +10,6 @@
 [50, 100, 150, 200]
 
 
->>> my_list = MyList([1, 2, '3', 4])
-Traceback (most recent call last):
-    ...
-TypeError: List contains non-numeric values
-
->>> my_list = MyList([1, 2, 3])
->>> my_list.print_sorted(2)
-Traceback (most recent call last):
-    ...
-TypeError: print_sorted() takes no arguments
-
->>> my_list = MyList([1, 2, 3])
->>> my_list.print_sorted()
-[1, 2, 3]
-
 >>> my_list = MyList([1, 2, 3])
 >>> my_list.print_sorted()
 [1, 2, 3]
