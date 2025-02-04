@@ -20,4 +20,4 @@ class BaseGeometry:
             Usage:
             You can create instances of Rectangle.
             """
-            raise NotImplementedError("area() is not implemented")
+            raise Exception("area() is not implemented")

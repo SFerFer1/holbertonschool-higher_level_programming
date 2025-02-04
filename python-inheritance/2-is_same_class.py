@@ -5,6 +5,8 @@ This module defines a class named Rectangle.
 Usage:
     You can create instances of Rectangle.
 """
+
+
 def is_same_class(obj, a_class):
     """
     retun true if is of that class
