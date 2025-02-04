@@ -12,19 +12,13 @@ class BaseGeometry:
     Usage:
     You can create instances of Rectangle.
     """
-    class Shape:
-        """
-        retun true if is of that class
-
-        Usage:
-        You can create instances of Rectangle.
-        """
-        def area(self):
-            """
-            retun true if is of that class
-
-            Usage:
-            You can create instances of Rectangle.
-            """
-            raise NotImplementedError("area() is not implemented")
-
+    def area(self):
+        """Raises an Exception for unimplemented area method"""
+        raise Exception("area() is not implemented")
+    
+    def integer_validator(self, name, value):
+        """ positive integer"""
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
