@@ -12,12 +12,11 @@ class BaseGeometry:
     Usage:
     You can create instances of Rectangle.
     """
-    class Shape:
-        def area(self):
-            """
-            retun true if is of that class
+    def area(self):
+        """
+        retun true if is of that class
 
-            Usage:
-            You can create instances of Rectangle.
-            """
-            raise Exception("area() is not implemented")
+        Usage:
+        You can create instances of Rectangle.
+        """
+        raise Exception("area() is not implemented")
