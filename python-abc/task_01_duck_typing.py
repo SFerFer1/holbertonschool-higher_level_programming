@@ -25,6 +25,7 @@ class Shape(ABC):
     def perimeter(self):
         pass
 
+
 class Circle(Shape):
     """
     This module defines a class named Rectangle.
@@ -35,13 +36,13 @@ class Circle(Shape):
     def __init__(self, radius):
         self.__radius = radius
 
-    @abstractmethod
+
     def area(self):
         return math.pi * (self.radius ** 2)
 
-    @abstractmethod
     def perimeter(self):
         return 2 * math.pi * self.radius
+
 
 class Rectangle(Shape):
     """
@@ -54,12 +55,9 @@ class Rectangle(Shape):
         self.__width = width
         self.__heigth = heigth
 
-    @abstractmethod
     def area(self):
         return (self.__width * self.__heigth) 
 
-    @abstractmethod
+
     def perimeter(self):
         return ((self.__width * 2) + (self.__heigth * 2))
-
-    
