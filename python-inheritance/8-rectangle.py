@@ -18,10 +18,10 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
 
-        if width > 0:
+        if width < 0:
             raise ValueError("width must be greater than 0")
         
-        if height > 0:
+        if height < 0:
             raise ValueError("height must be greater than 0")
 
         self.__width = width
