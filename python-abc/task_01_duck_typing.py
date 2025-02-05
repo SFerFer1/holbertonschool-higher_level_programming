@@ -34,10 +34,9 @@ class Circle(Shape):
         You can create instances of Rectangle.
     """
     def __init__(self, radius):
-        self.__radius = radius
-
         if radius < 0:
             raise ValueError("Radius cannot be negative")
+        self.__radius = radius
         
     def area(self):
         return math.pi * (self.__radius ** 2)
