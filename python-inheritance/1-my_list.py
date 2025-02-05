@@ -29,4 +29,5 @@ class MyList(list):
 
 
         sorted_list = sorted(self)
-        return(sorted_list)
+        print(sorted_list)
+        return sorted_list
