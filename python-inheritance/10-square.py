@@ -20,7 +20,7 @@ class Square(Rectangle):
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        
+
         if size <= 0:
             raise ValueError("size must be greater than 0")
 
