@@ -15,8 +15,18 @@ class MyList(list):
         """
         print itself sorted 
 
+
         Usage:
         You can create instances of Rectangle.
         """
+        
+        def __str__(self):
+            """
+            Buenas tardes 
+            """
+            return "MyList({})".format(super().__str__())
+
+
+
         sorted_list = sorted(self)
         print(sorted_list)
