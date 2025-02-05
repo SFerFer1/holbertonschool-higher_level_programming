@@ -24,10 +24,9 @@ class MyList(list):
             """
             
             """
-            return "MyList({})".format(super().__str__())
+            print("MyList({})".format(super().__str__()))
 
 
 
         sorted_list = sorted(self)
         print(sorted_list)
-        return sorted_list
