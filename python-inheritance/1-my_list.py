@@ -22,11 +22,11 @@ class MyList(list):
         
         def __str__(self):
             """
-            Buenas tardes 
+            
             """
             return "MyList({})".format(super().__str__())
 
 
 
         sorted_list = sorted(self)
-        print(sorted_list)
+        return(sorted_list)
