@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""ashhsjjdi dsoidu saisdsio"""
+
 Rectangle = __import__('11-rectangle').Rectangle
 
 
