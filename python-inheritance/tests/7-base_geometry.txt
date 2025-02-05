@@ -1,11 +1,17 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-
 >>> base_geometry = BaseGeometry("age")
 >>> base_geometry.integer_validator()
-[5, 10, 15, 20, 30]
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
 
 >>> base_geometry = BaseGeometry([10, 20, 5, 15, 30])
 >>> base_geometry.integer_validator()
-[5, 10, 15, 20, 30]
+Traceback (most recent call last):
+    ...
+TypeError: name must be an integer
 
+>>> base_geometry = BaseGeometry(25)
+>>> base_geometry.integer_validator("age", 25)
+>>> # No output expected, since it passes validation without raising exceptions.

@@ -13,11 +13,11 @@ class BaseGeometry:
     You can create instances of Rectangle.
     """
     def area(self):
-        """Raises an Exception for unimplemented area method"""
+        """Raises an Exception"""
         raise Exception("area() is not implemented")
     
     def integer_validator(self, name, value):
-        """ positive integer"""
+        """positive"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
