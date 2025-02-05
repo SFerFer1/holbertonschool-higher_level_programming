@@ -51,16 +51,16 @@ class Rectangle(Shape):
     Usage:
         You can create instances of Rectangle.
     """
-    def __init__(self, width, heigth):
+    def __init__(self, width, height):
         self.__width = width
-        self.__heigth = heigth
+        self.__heigth = height
 
     def area(self):
-        return (self.__width * self.__heigth) 
+        return (self.__width * self.__height) 
 
 
     def perimeter(self):
-        return ((self.__width * 2) + (self.__heigth * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
 def shape_info(shape):
     print(f"Area: {shape.area()}")
