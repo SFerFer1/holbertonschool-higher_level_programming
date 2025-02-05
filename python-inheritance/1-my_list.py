@@ -21,6 +21,6 @@ class MyList(list):
         Usage:
         You can create instances of Rectangle.
         """
- 
+
         sorted_list = sorted(self)
         print(sorted_list)
