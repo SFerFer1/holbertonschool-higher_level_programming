@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-
 Rectangle = __import__('11-rectangle').Rectangle
+"""
+retun true if is of that class
+
+Usage:
+You can create instances of Rectangle.
+"""
 
 
 class Square(Rectangle):
