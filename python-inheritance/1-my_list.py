@@ -20,11 +20,6 @@ class MyList(list):
         You can create instances of Rectangle.
         """
         
-        def __str__(self):
-            """
-            
-            """
-            print("MyList({})".format(super().__str__()))
 
 
 
