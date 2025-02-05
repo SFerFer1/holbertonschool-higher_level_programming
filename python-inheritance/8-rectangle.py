@@ -28,6 +28,12 @@ class Rectangle(BaseGeometry):
         
         if height <= 0:
             raise ValueError("height must be greater than 0")
+        
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
 
         self.__width = width
         self.__height = height
