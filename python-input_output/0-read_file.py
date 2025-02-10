@@ -1,4 +1,16 @@
 #!/usr/bin/python3
+"""
+This module defines a class named Rectangle.
+
+Usage:
+    You can create instances of Rectangle.
+"""
 def read_file(filename=""):
-    f = open(filename, 'r', encoding="utf-8")
-    print(f)
+    """
+    This module defines a class named Rectangle.
+
+    Usage:
+    You can create instances of Rectangle.
+    """
+    with open(filename, 'r', encoding="utf-8") as f:
+        print(f.read())
