@@ -5,6 +5,8 @@ This module defines a class named Rectangle.
 Usage:
     You can create instances of Rectangle.
 """
+
+
 def read_file(filename=""):
     """
     This module defines a class named Rectangle.
