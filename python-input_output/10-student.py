@@ -13,7 +13,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
     def to_json(self, attrs=None):
         if attrs is None:
             return self.__dict__
