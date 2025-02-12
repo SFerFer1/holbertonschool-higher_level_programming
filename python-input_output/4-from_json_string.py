@@ -17,4 +17,4 @@ def from_json_string(my_str):
     Usage:
     You can create instances of Rectangle.
     """
-    return (json.dumps(my_str))
+    return (json.loads(my_str))
