@@ -13,4 +13,4 @@ def read_file(filename=""):
     You can create instances of Rectangle.
     """
     with open(filename, "r", encoding="utf-8") as f:
-        print(f.read())
+        print(f.read(), end="")

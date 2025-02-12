@@ -7,5 +7,5 @@ Usage:
 """
 def append_write(filename="", text=""):
     with open(filename, 'a', encoding='utf-8') as a:
-        a.write(text)
-        return len(text)
+        return a.write(text)
+

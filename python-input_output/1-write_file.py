@@ -13,4 +13,4 @@ def write_file(filename="", text=""):
     You can create instances of Rectangle.
     """
     with open(filename, 'w', encoding="utf-8") as d:
-        d.write(text)
+        return d.write(text)
