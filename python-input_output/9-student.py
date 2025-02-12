@@ -7,9 +7,6 @@ Usage:
 """
 
 
-import sys 
-
-
 class Student:
     """
     This module defines a class named Rectangle.

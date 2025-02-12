@@ -7,9 +7,6 @@ Usage:
 """
 
 
-import sys 
-
-
 def class_to_json(obj):
     """
     This module defines a class named Rectangle.
