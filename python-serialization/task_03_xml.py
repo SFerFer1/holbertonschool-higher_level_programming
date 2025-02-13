@@ -15,7 +15,7 @@ def serialize_to_xml(data, filename):
             item = ET.SubElement(root, key)
             item.text = str(value)
         tree = ET.ElementTree(root)
-        tree.write(filename)
+        tree.write(filename, encoding="utf-8", xml_declaration=True)
         return True
     except Exception as e:
         print(f"Ocurrió un error: {e}")
