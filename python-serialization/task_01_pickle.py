@@ -21,7 +21,7 @@ class CustomObject:
         print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-            try:
+        try:
             with open(filename, 'wb') as file:
                 pickle.dump(self, file)
             print(f"Object serialized and saved to {filename}")
