@@ -31,7 +31,7 @@ def load_and_deserialize(filename):
     You can create instances of Rectangle.
     """
     with open(filename, 'r') as file:
-        json.load(file)
+        ret = json.load(file)
         return ret
 
 
