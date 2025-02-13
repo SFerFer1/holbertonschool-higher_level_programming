@@ -9,6 +9,12 @@ import json
 
 
 def serialize_and_save_to_file(data, filename):
+    """
+    This module defines a class named Rectangle.
+
+    Usage:
+    You can create instances of Rectangle.
+    """
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
 
@@ -25,7 +31,7 @@ def load_and_deserialize(filename):
     You can create instances of Rectangle.
     """
     with open(filename, 'r') as file:
-    ret = json.load(file)
+         json.load(file)
     return ret
 
 
