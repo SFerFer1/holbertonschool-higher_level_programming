@@ -16,7 +16,11 @@ def deserialize_from_xml(filename):
     data_dict = {}
     for child in root:
         value = child.text
-        if value.isdigit():
+        if value.lower() == "true":
+            value = True
+        elif value.lower() == "false":
+            value = False
+        elif value.isdigit():
             value = int(value)
         else:
             try:
