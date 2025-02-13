@@ -6,9 +6,6 @@ Usage:
     You can create instances of Rectangle.
 """
 import sys
-import os 
-sys.path.append(os.getcwd())
-
 from save_to_json_file import save_to_json_file
 from load_from_json_file import load_from_json_file
 
@@ -20,15 +17,16 @@ def main():
     Usage:
     You can create instances of Rectangle.
     """
-
+    arguments = sys.argv[1:]
+    
     try:
-        current_list = load_from_json_file("add_item.json")
+        existing_items = load_from_json_file("add_item.json")
     except FileNotFoundError:
-        current_list = []
+        existing_items = []
 
-    current_list.extend(sys.argv[1:])
+    existing_items.extend(arguments)
 
-    save_to_json_file(current_list, "add_item.json")
+    save_to_json_file(existing_items, "add_item.json")
 
 if __name__ == "__main__":
     main()
