@@ -32,6 +32,6 @@ def load_and_deserialize(filename):
     """
     with open(filename, 'r') as file:
          json.load(file)
-    return ret
+        return ret
 
 
