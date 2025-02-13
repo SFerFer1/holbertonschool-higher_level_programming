@@ -19,7 +19,7 @@ class Student:
         else:
             return {
                 key: value 
-                or key, value in self.__dict__.items() 
+                for key, value in self.__dict__.items() 
                 if key in attrs
                     }
 
