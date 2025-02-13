@@ -29,5 +29,3 @@ def deserialize_from_xml(filename):
                 pass
         data_dict[child.tag] = value
     return data_dict
-
-
