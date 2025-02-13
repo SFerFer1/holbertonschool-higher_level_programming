@@ -4,6 +4,14 @@ import xml.etree.ElementTree as ET
 def serialize_to_xml(dictionary, filename):
     root = ET.Element("data")
     for key, value in dictionary.items():
+        if isinstance(value, str):
+            if value.isdigit():
+                value = int(value)
+            else:
+                try:
+                    value = float(value)
+                except ValueError:
+                    pass
         value = str(value)
         child = ET.SubElement(root, key)
         child.text = value
