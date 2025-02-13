@@ -22,13 +22,11 @@ class CustomObject:
 
     def serialize(self, filename):
         try:
-            if os.path.getsize(filename) == 0:
-                raise ValueError("File is empty")
             with open(filename, 'wb') as file:
                 pickle.dump(self, file)
             print(f"Object serialized and saved to {filename}")
-        except Exception as e:
-            print(f"Error occurred while serializing: {e}")
+        except EOFError:
+    print(f"Error: The file '{BAD_FILENAME}' is corrupted or empty.")
 
     @classmethod
     def deserialize(cls, filename: str):
