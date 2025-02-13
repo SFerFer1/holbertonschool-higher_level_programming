@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 def serialize_to_xml(dictionary, filename):
     root = ET.Element("data")
+
     for key, value in dictionary.items():
         if isinstance(value, str):
             if value.isdigit():
@@ -13,8 +14,10 @@ def serialize_to_xml(dictionary, filename):
                 except ValueError:
                     pass
         value = str(value)
+        
         child = ET.SubElement(root, key)
         child.text = value
+
     tree = ET.ElementTree(root)
     tree.write(filename)
 
@@ -37,3 +40,4 @@ def deserialize_from_xml(filename):
                 pass
         data_dict[child.tag] = value
     return data_dict
+
