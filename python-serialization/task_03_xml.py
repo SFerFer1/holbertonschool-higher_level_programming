@@ -22,8 +22,6 @@ def serialize_to_xml(data, filename):
         return False
 
 
-        import xml.etree.ElementTree as ET
-
 def deserialize_from_xml(filename):
     tree = ET.parse(filename)
     root = tree.getroot()
