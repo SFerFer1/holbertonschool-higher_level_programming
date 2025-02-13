@@ -8,6 +8,12 @@ Usage:
 
 
 def pascal_triangle(n):
+    """
+    This module defines a class named Rectangle.
+
+    Usage:
+    You can create instances of Rectangle.
+    """
     if n <= 0:
         return []
     
