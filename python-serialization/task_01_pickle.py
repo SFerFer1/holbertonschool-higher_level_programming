@@ -26,7 +26,7 @@ class CustomObject:
                 pickle.dump(self, file)
             print(f"Object serialized and saved to {filename}")
         except EOFError:
-    print(f"Error: The file '{BAD_FILENAME}' is corrupted or empty.")
+            print(f"Error: The file '{BAD_FILENAME}' is corrupted or empty.")
 
     @classmethod
     def deserialize(cls, filename: str):
