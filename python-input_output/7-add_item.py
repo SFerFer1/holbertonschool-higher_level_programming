@@ -1,32 +1,22 @@
 #!/usr/bin/python3
-"""
-This module defines a class named Rectangle.
-
-Usage:
-    You can create instances of Rectangle.
-"""
+"""Script that adds all command line arguments
+to a list and saves them to a file."""
 import sys
-from save_to_json_file import save_to_json_file
-from load_from_json_file import load_from_json_file
 
 
-def main():
-    """
-    This module defines a class named Rectangle.
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-    Usage:
-    You can create instances of Rectangle.
-    """
-    arguments = sys.argv[1:]
-    
-    try:
-        existing_items = load_from_json_file("add_item.json")
-    except FileNotFoundError:
-        existing_items = []
+filename = "add_item.json"
 
-    existing_items.extend(arguments)
 
-    save_to_json_file(existing_items, "add_item.json")
+try:
+    items = load_from_json_file(filename)
+except FileNotFoundError:
+    items = []
 
-if __name__ == "__main__":
-    main()
+
+items.extend(sys.argv[1:])
+
+
+save_to_json_file(items, filename)               
