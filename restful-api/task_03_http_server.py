@@ -7,6 +7,11 @@ PORT = 8000
 class run(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
+        if self.path == "/":
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            self.wfile.write(b"Hello, this is a simple API!")
+
         if self.path == "/data":
             data = {
                 "name": "John",
@@ -18,7 +23,7 @@ class run(http.server.BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(data).encode('utf-8'))
         else:
             self.send_response(404)
-
+            
 
 
 with socketserver.TCPServer(("", PORT),run ) as httpd:
