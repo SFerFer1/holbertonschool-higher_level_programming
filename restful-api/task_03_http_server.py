@@ -21,9 +21,6 @@ class run(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps(data).encode('utf-8'))
-        else:
-            self.send_response(404)
-            
 
 
 with socketserver.TCPServer(("", PORT),run ) as httpd:
