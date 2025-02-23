@@ -22,13 +22,19 @@ def status():
 
 @app.route('/users/<username>')
 def users(username):
-    for user in users:
-        if (user == username):
-            return jsonify(user)
-    return {"error": "User not found"}
+    user = users.get(username)
+    if user:
+        return jsonify(user)
+    return jsonify({"error": "User not found"}), 404
 
-@app.route('/add_user')
+@app.route('/add_user', methods=['POST'])
 def add_user(add_user):
+    new_user = request.get_json()
+    if "username" in new_user and "name" in new_user and "age" in new_user and "city" in new_user:
+        users[new_user["username"]] = new_user
+        return jsonify({"message": "User added successfully"}), 201
+    return jsonify({"error": "Invalid data"}), 400
+
     return add_user
 if __name__ == "__main__":
     app.run()
