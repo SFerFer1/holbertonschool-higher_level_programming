@@ -10,11 +10,11 @@ for user in users:
     userss.append(user)
 @app.route('/')
 def home():
-     return "“Welcome to the Flask API!”"
+     return "Welcome to the Flask API!"
 
 @app.route('/data')
-def data():
-    return jsonify(userss)
+def get_users():
+    return jsonify(list(users.keys())) 
     
 @app.route('/status')
 def status():
