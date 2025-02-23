@@ -21,7 +21,7 @@ def status():
      return "OK"
 
 @app.route('/users/<username>')
-def users(username):
+def get_user(username):
     user = users.get(username)
     if user:
         return jsonify(user)
@@ -29,13 +29,19 @@ def users(username):
 
 @app.route('/add_user', methods=['POST'])
 def add_user(add_user):
+    def add_user():
     new_user = request.get_json()
-    if "username" in new_user and "name" in new_user and "age" in new_user and "city" in new_user:
-        users[new_user["username"]] = new_user
-        return jsonify({"message": "User added successfully"}), 201
-    return jsonify({"error": "Invalid data"}), 400
+    if new_user['username'] in users:
+        return jsonify({"error": "Username already exists"}), 400
+    if 'username' not in new_user:
+        return jsonify({"error": "Username is required"}), 400
+    users[new_user['username']] = new_user
+    return jsonify({
+        "message": "User added",
+        "user": new_user
+    }),
+    
 
-    return add_user
 if __name__ == "__main__":
     app.run()
 
