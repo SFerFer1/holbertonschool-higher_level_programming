@@ -1,2 +1,2 @@
 -- Messi chiquitito
-SHOW DATABASE;
+SHOW DATABASES;
