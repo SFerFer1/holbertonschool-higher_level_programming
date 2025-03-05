@@ -1,2 +1,3 @@
--- Replace 'table_name' with the actual table name
-SELECT * FROM table_name;
+-- Messi chiquitito
+USE mysql;
+SHOW TABLES;
