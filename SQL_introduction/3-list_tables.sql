@@ -1,3 +1,4 @@
 -- Messi chiquitito
 USE mysql;
-SELECT * FROM mysql;
+SHOW TABLES FROM hbtn_test_db_0;
+
