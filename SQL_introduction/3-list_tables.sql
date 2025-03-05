@@ -1,3 +1,3 @@
 -- Messi chiquitito
 USE mysql;
-SHOW TABLES;
+SELECT * FROM mysql;
