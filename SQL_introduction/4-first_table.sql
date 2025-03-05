@@ -1,4 +1,5 @@
+-- Messi chiquitito
 CREATE first_table IF NOT EXISTS(
-INT id,
-VARCHAR(256) name;
+id INT,
+name VARCHAR(256);
 )
