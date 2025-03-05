@@ -1,2 +1,2 @@
 -- Messi chiquitito
-SELECT score,name FROM ORDER BY score DESC;
+SELECT name,score FROM ORDER BY score DESC;
