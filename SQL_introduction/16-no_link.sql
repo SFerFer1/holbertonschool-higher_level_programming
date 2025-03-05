@@ -1,2 +1,7 @@
 -- Messi chiquitito
-SELECT score, name FROM second_tableWHERE name IS NOT NULL AND name != '' ORDER BY score DESC;
+USE hbtn_0c_0;
+
+SELECT score, name 
+FROM second_table
+WHERE name IS NOT NULL AND name != ''
+ORDER BY score DESC;
