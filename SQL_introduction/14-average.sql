@@ -1,2 +1,2 @@
 -- Messi chiquitito
-SELECT AVG(score) FROM second_table;
+SELECT AVG(score) as FROM second_table;
