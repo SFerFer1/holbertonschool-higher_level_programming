@@ -1,4 +1,6 @@
 -- asas
+USE hbtn_0d_tvshows;
+
 SELECT g.name AS tv_genres
 FROM genres g
 JOIN tv_shows_genres tg ON g.id = tg.genre_id
