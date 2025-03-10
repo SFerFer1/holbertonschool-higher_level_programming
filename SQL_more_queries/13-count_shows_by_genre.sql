@@ -1,4 +1,5 @@
--- aqaa
+-- assa
+USE hbtn_0d_tvshows
 SELECT g.name AS genre, COUNT(s.id) AS number_of_shows
 FROM tv_genres g
 JOIN tv_shows_genres sg ON g.id = sg.genre_id
