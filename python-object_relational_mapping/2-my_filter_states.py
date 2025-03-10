@@ -20,9 +20,11 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE "
-"'{}' ORDER BY id ASC".format('N%'))
-
+    cursor.execute(
+        "SELECT * FROM states WHERE name LIKE '{}' "
+        "ORDER BY id ASC".format('N%')
+    )
+    
     states = cursor.fetchall()
 
     for state in states:
