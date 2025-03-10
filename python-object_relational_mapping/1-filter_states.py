@@ -23,8 +23,6 @@ if __name__ == "__main__":
         "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC"
     )
 
-
-
     states = cursor.fetchall()
 
     for state in states:
