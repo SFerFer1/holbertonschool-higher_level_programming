@@ -1,9 +1,6 @@
 -- assa
-USE hbtn_0d_tvshows
-SELECT g.name AS genre, COUNT(s.id) AS number_of_shows
-FROM tv_genres g
-JOIN tv_shows_genres sg ON g.id = sg.genre_id
-JOIN tv_shows s ON sg.show_id = s.id
-GROUP BY g.name
-HAVING COUNT(s.id) > 0
+SELECT genre, COUNT(*) AS number_of_shows
+FROM shows
+GROUP BY genre
+HAVING number_of_shows > 0
 ORDER BY number_of_shows DESC;
