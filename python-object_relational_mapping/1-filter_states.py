@@ -24,6 +24,7 @@ if __name__ == "__main__":
         " LIKE 'n%' ORDER BY id ASC"
     )
 
+
     states = cursor.fetchall()
 
     for state in states:
