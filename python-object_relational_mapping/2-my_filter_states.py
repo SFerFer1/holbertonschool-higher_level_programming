@@ -24,7 +24,7 @@ if __name__ == "__main__":
         "SELECT * FROM states WHERE name LIKE '{}' "
         "ORDER BY id ASC".format('N%')
     )
-    
+
     states = cursor.fetchall()
 
     for state in states:
