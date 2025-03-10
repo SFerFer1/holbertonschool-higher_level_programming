@@ -21,8 +21,8 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE '{}' "
-        "ORDER BY id ASC".format('N%')
+        "SELECT * FROM states WHERE BINARY name LIKE '{}' "
+        "ORDER BY id ASC".format('Nevada')
     )
 
     states = cursor.fetchall()
