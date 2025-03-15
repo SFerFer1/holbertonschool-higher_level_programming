@@ -21,19 +21,15 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-
-    query = "SELECT * FROM states WHERE BINARY name LIKE %s ORDER BY id ASC"
-    cursor.execute(query, (search_term,))
+    cursor.execute(
+        "SELECT * FROM states WHERE BINARY name LIKE '{}' "
+        "ORDER BY id ASC".format('Nevada')
+    )
 
     states = cursor.fetchall()
-
-
-    if len(states) == 0:
-        sys.exit(0)
 
     for state in states:
         print(state)
 
     cursor.close()
     db.close()
-
