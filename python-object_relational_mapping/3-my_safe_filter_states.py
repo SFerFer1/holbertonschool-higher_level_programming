@@ -5,7 +5,6 @@ Este script se conecta a una base de datos MySQL
 import MySQLdb
 import sys
 
-
 def main():
     username = sys.argv[1]
     password = sys.argv[2]
@@ -28,21 +27,15 @@ def main():
         "ORDER BY id ASC"
     ).format(state_name)
 
-
     cursor.execute(query)
 
-
     results = cursor.fetchall()
-
 
     for row in results:
         print(row)
 
-
     cursor.close()
     db.close()
-
-
 
 if __name__ == "__main__":
     main()
