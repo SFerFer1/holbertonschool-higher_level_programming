@@ -10,7 +10,6 @@ def main():
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    state_name = sys.argv[4]
 
     db = MySQLdb.connect(
         host="localhost",
@@ -22,15 +21,14 @@ def main():
 
     cursor = db.cursor()
 
-    query = (
-        "SELECT * FROM states "
-        "WHERE BINARY name = '{}' "
-        "ORDER BY id ASC"
-    ).format(state_name)
-
+    query = """
+    SELECT cities.id, cities.name, states.name
+    FROM cities
+    JOIN states ON cities.state_id = states.id
+    ORDER BY cities.id ASC
+    """
 
     cursor.execute(query)
-
 
     results = cursor.fetchall()
 
@@ -41,8 +39,6 @@ def main():
 
     cursor.close()
     db.close()
-
-
 
 if __name__ == "__main__":
     main()
