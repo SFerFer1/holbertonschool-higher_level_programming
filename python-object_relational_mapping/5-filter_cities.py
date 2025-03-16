@@ -2,17 +2,16 @@
 """
 Este script se conecta a una base de datos MySQL
 """
+
 import MySQLdb
 import sys
 
 
 def main():
-
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
     state_name = sys.argv[4]
-
 
     db = MySQLdb.connect(
         host="localhost",
@@ -22,9 +21,7 @@ def main():
         db=database
     )
 
-
     cursor = db.cursor()
-
 
     query = """
     SELECT cities.name
@@ -34,18 +31,13 @@ def main():
     ORDER BY cities.id ASC
     """
 
-
     cursor.execute(query, (state_name,))
-
 
     results = cursor.fetchall()
 
-
     cities = [row[0] for row in results]
 
-
     print(", ".join(cities))
-
 
     cursor.close()
     db.close()
