@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Este script 
+Este script
 """
 
 import MySQLdb
@@ -10,7 +10,7 @@ import sys
 def main():
     if len(sys.argv) != 4:
         print("Usage: ./4-cities_by_state.py <mysql username>"
-        " <mysql password> <database name>")
+" <mysql password> <database name>")
         return
 
     username = sys.argv[1]
