@@ -5,6 +5,7 @@ Este script se conecta a una base de datos MySQL
 import MySQLdb
 import sys
 
+
 def main():
     username = sys.argv[1]
     password = sys.argv[2]
@@ -36,6 +37,7 @@ def main():
 
     cursor.close()
     db.close()
+
 
 if __name__ == "__main__":
     main()
