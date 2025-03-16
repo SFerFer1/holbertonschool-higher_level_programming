@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Este script se conecta a una base de datos MySQL y obtiene información de ciudades y estados.
+Este script 
 """
 
 import MySQLdb
@@ -9,7 +9,8 @@ import sys
 
 def main():
     if len(sys.argv) != 4:
-        print("Usage: ./4-cities_by_state.py <mysql username> <mysql password> <database name>")
+        print("Usage: ./4-cities_by_state.py <mysql username>"
+        " <mysql password> <database name>")
         return
 
     username = sys.argv[1]
@@ -17,7 +18,11 @@ def main():
     database = sys.argv[3]
 
     db = MySQLdb.connect(
-        host="localhost", port=3306, user=username, passwd=password, db=database
+        host="localhost",
+        port=3306,
+        user=username,
+        passwd=password,
+        db=database
     )
     cursor = db.cursor()
 
