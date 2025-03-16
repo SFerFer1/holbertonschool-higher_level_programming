@@ -24,13 +24,13 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).filter(State.id == 2).first()
+    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
 
-    if state:
-        state.name = "New Mexico"
-        session.commit()
-        print(f"State with id 2 has been updated to {state.name}")
-    else:
-        print("State with id 2 not found")
+    for state in states_to_delete:
+        session.delete(state)
+
+    session.commit()
+
+    print(f"Deleted {len(states_to_delete)} state(s)")
 
     session.close()
